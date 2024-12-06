@@ -107,7 +107,8 @@ std::cout<< A ;
 return 0;
 }
 ```
-
+# String basic concept
+anything written inside `""` is string 
 ```
 #include <iostream>
 
@@ -118,3 +119,23 @@ int main(){
 return 0;
 }
 ```
+
+
+Now lets talk about conatainers type 
+```
+int : integer container
+hold value like  1, 2, 6748, -22
+```
+```
+float : float container 
+holds value like 1.5, 44.5, -33.8
+```
+```
+char : character container
+holds value like w, r, i, s
+```
+```
+boolean : True/False container
+holds two value T or F
+```
+
