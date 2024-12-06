@@ -1,5 +1,12 @@
 # C++ Tutorial
 
+## Basic String concept
+anything inside double quotes will be string
+`" "`
+```cpp
+std::cout<< "hey ace" ;
+```
+
 ## Variables and Data Types
 
 In C++, a **variable** is a storage location identified by a name. It holds a value that can be modified during the program's execution. 
@@ -42,13 +49,12 @@ dont use namespace,  just go with std and access from it.
 ### Example:
 ```cpp
 #include <iostream>
-using namespace std;
 
 int main() {
     int age;
-    cout << "Enter your age: ";
-    cin >> age;  // Taking input from user
-    cout << "Your age is: " << age << endl;  // Printing output
+    std::cout << "Enter your age: ";
+    std::cin >> age;  // Taking input from user
+    std::cout << "Your age is: " << age << endl;  // Printing output
     return 0;
 }
 ```
@@ -183,3 +189,4 @@ Ternary (?:): A shorthand for if-else statements. Syntax: condition ? expr1 : ex
 int size = sizeof(int);  // size will be the size of int in bytes
 int result = (a > b) ? a : b;  // result is a if a > b, otherwise b
 ```
+
