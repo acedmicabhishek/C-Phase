@@ -49,7 +49,8 @@ int x = 5 ;
 ```
 
 2nd method : litral
-{} anything inside will be declared without making a copy 
+`{}` anything inside will be declared without making a copy 
+
 `int x{5} ;`
 
 # Iostream
@@ -88,6 +89,31 @@ int y = 9;
 int z = x + y ;
 
 std::cout<< z ;
+
+return 0;
+}
+```
+```
+#include <iostream>
+
+int main(){
+int z = 20;
+int A;
+std::cout<< z;
+std::cin>> A;
+
+std::cout<< A ;
+
+return 0;
+}
+```
+
+```
+#include <iostream>
+
+int main(){
+
+    std::cout<<"helloworld";
 
 return 0;
 }
