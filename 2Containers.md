@@ -72,14 +72,16 @@ const int MAX_AGE = 100;
 - String literal: "Hello"
 
 ### Example:
-
-```cpp
-int num = 5;   // 5 is an integer literal
-float pi = 3.14; // 3.14 is a floating-point literal
-```
 - there is two ways to do  that
 1. copy that is `int x = 5;`
 2. define literal value `int x{5};`
+
+```cpp
+int balls{8}; // without copy
+int num = 5;   // 5 is an integer literal
+float pi = 3.14; // 3.14 is a floating-point literal
+```
+
 
 # Operators
 - Operators are symbols used to perfom some math
