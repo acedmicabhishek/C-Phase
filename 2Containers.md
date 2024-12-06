@@ -131,7 +131,9 @@ Used to perform bit-level operations:
 int x = 5;  // 101 in binary
 int y = 3;  // 011 in binary
 int result = x & y;  // result is 1 (0001 in binary)
-Assignment Operators
+
+
+# Assignment Operators
 Used to assign values to variables:
 
 = : Simple assignment
@@ -140,14 +142,12 @@ Used to assign values to variables:
 *= : Multiply and assign
 /= : Divide and assign
 %= : Modulus and assign
-Example:
 
-cpp
-Copy code
 int a = 5;
 a += 3;  // a is now 8
 a *= 2;  // a is now 16
-Increment/Decrement Operators
+
+## Increment/Decrement Operators
 Used to increase or decrease the value of a variable by 1:
 
 ++ : Increment (increase by 1)
@@ -156,21 +156,19 @@ These can be used in prefix or postfix form:
 
 ++a (pre-increment): Increases the value before using it.
 a++ (post-increment): Increases the value after using it.
-Example:
+### Example:
 
-cpp
-Copy code
 int a = 5;
 ++a;  // a is now 6
 a++;  // a is now 7
-Miscellaneous Operators
+
+
+# Miscellaneous Operators
 Other operators that don't fall into the previous categories:
 
 sizeof: Returns the size (in bytes) of a data type or variable.
 Ternary (?:): A shorthand for if-else statements. Syntax: condition ? expr1 : expr2;
-Example:
-
-cpp
-Copy code
+```
 int size = sizeof(int);  // size will be the size of int in bytes
 int result = (a > b) ? a : b;  // result is a if a > b, otherwise b
+```
