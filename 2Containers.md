@@ -6,7 +6,8 @@ In C++, a **variable** is a storage location identified by a name. It holds a va
 
 ### Data Types
 
-Data types specify the type of data a variable can store. C++ provides several built-in data types:
+It defines the box or containers 
+primitive means it is baked into compiler
 
 - **Primitive Data Types**:
   - `int` - Integer type, used for whole numbers.
@@ -34,11 +35,12 @@ bool isActive = true;
 
 # Input and Output (cin, cout)
 C++ uses cin and cout for input and output operations, respectively. These are part of the standard library <iostream>, which must be included at the beginning of your program.
+dont use namespace,  just go with std and access from it.
 
-`cout`: Used to print output to the console.
-`cin`: Used to take input from the user.
+`std::cout<<`: Used to print output to the console.
+`std::cin>>`: Used to take input from the user.
 ### Example:
-```
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -54,7 +56,7 @@ int main() {
 # Constants and Literals
 Constants: Constants are fixed values that cannot be altered during the execution of the program. They are defined using the const keyword.
 ### Example:
-```
+```cpp
 const int MAX_AGE = 100;
 ```
 - Literals: A literal is a constant value used directly in code. Examples include:
@@ -65,33 +67,41 @@ const int MAX_AGE = 100;
 
 ### Example:
 
-```
+```cpp
 int num = 5;   // 5 is an integer literal
 float pi = 3.14; // 3.14 is a floating-point literal
 ```
+- there is two ways to do  that
+1. copy that is `int x = 5;`
+2. define literal value `int x{5};`
+
 # Operators
-- Operators are symbols used to perform operations on variables or values. C++ supports several types of operators:
+- Operators are symbols used to perfom some math
 
 ## Arithmetic Operators
 Used for basic arithmetic operations:
 
 `+` : Addition
+
 `-` : Subtraction
+
 `*` : Multiplication
+
 `/` : Division
+
 `%` : Modulus (remainder)
 
 ### Example:
 
-```
+```cpp
 int sum = 5 + 3;    // sum is 8
 int product = 4 * 2; // product is 8
 int remainder = 10 % 3; // remainder is 1
 ```
 
-# Relational Operators
+## Relational Operators
 Used to compare two values:
-```
+```cpp
 == : Equal to
 != : Not equal to
 < : Less than
@@ -100,25 +110,25 @@ Used to compare two values:
 >= : Greater than or equal to
 
 ```
-```
+```cpp
 int a = 5, b = 10;
 bool result = (a < b);  // result is true
 ```
-# Logical Operators
+## Logical Operators
 - Used to perform logical operations (commonly in conditional statements):
-```
+```cpp
 && : Logical AND
 || : Logical OR
 ! : Logical NOT
 ```
-```
+```cpp
 bool x = true, y = false;
 bool result = (x && y); // result is false
 ```
 
-# Bitwise Operators
+## Bitwise Operators
 Used to perform bit-level operations:
-```
+```cpp
 & : Bitwise AND
 | : Bitwise OR
 ^ : Bitwise XOR
@@ -127,13 +137,13 @@ Used to perform bit-level operations:
 >> : Right shift
 ```
 
-```
+```cpp
 int x = 5;  // 101 in binary
 int y = 3;  // 011 in binary
 int result = x & y;  // result is 1 (0001 in binary)
 ```
 
-# Assignment Operators
+## Assignment Operators
 Used to assign values to variables:
 
 = : Simple assignment
@@ -143,7 +153,7 @@ Used to assign values to variables:
 /= : Divide and assign
 %= : Modulus and assign
 
-```
+```cpp
 int a = 5;
 a += 3;  // a is now 8
 a *= 2;  // a is now 16
@@ -158,18 +168,18 @@ These can be used in prefix or postfix form:
 ++a (pre-increment): Increases the value before using it.
 a++ (post-increment): Increases the value after using it.
 ### Example:
-```
+```cpp
 int a = 5;
 ++a;  // a is now 6
 a++;  // a is now 7
 ```
 
-# Miscellaneous Operators
+## Miscellaneous Operators
 Other operators that don't fall into the previous categories:
 
 sizeof: Returns the size (in bytes) of a data type or variable.
 Ternary (?:): A shorthand for if-else statements. Syntax: condition ? expr1 : expr2;
-```
+```cpp
 int size = sizeof(int);  // size will be the size of int in bytes
 int result = (a > b) ? a : b;  // result is a if a > b, otherwise b
 ```
