@@ -1,36 +1,42 @@
 # The program will start from entry point
 
- main() 
- it has two type : int and void
+`main()`
+ 
+ it has two types
+`int main`
+`int void`
+        
 
 
 # the program will stop at end point
- return 0; 
- error code : 1 and 0 
+```return 0;``` 
+ `error code` : `1` and `0` 
 
-1 : something aint right
-0 : perfect
+`1` : `something aint right`
+
+`0` : `perfect`
 
 both will finish but one with error code saying something might be wrong 
 
 
 # code expamle : 
-
+```
 int main (){
 
     return 0;
 }
-
+```
 
 # what is scope 
 restricting some function or workflow within a object
 
 # example
+```
 z , y , m
  hey(a, b) {
 a and b are only available
 } 
-
+```
 
 # variable declaration
 1st method : copy 
