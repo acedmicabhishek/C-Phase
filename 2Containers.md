@@ -131,7 +131,7 @@ Used to perform bit-level operations:
 int x = 5;  // 101 in binary
 int y = 3;  // 011 in binary
 int result = x & y;  // result is 1 (0001 in binary)
-
+```
 
 # Assignment Operators
 Used to assign values to variables:
@@ -143,10 +143,11 @@ Used to assign values to variables:
 /= : Divide and assign
 %= : Modulus and assign
 
+```
 int a = 5;
 a += 3;  // a is now 8
 a *= 2;  // a is now 16
-
+```
 ## Increment/Decrement Operators
 Used to increase or decrease the value of a variable by 1:
 
@@ -157,11 +158,11 @@ These can be used in prefix or postfix form:
 ++a (pre-increment): Increases the value before using it.
 a++ (post-increment): Increases the value after using it.
 ### Example:
-
+```
 int a = 5;
 ++a;  // a is now 6
 a++;  // a is now 7
-
+```
 
 # Miscellaneous Operators
 Other operators that don't fall into the previous categories:
