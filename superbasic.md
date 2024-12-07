@@ -80,7 +80,7 @@ this is how we write
 both cin and cout is a feature of iostream
 
 # example code : 
-```
+```cpp
 #include <iostream>
 
 int main(){
