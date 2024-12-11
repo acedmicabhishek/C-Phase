@@ -20,7 +20,7 @@ Both will finish but one with error code saying something might be wrong
 
 
 # Code expamle : 
-```
+```cpp
 int main (){
 
     return 0;
@@ -31,7 +31,7 @@ int main (){
 restricting some function or workflow within a object
 
 # Example
-```
+```cpp
 z , y , m
  hey(a, b) {
 a and b are only available
@@ -43,7 +43,7 @@ a and b are only available
  equal to `=` is used to copy 
 
 for example
-```
+```cpp
 int x = 5 ;
 // 5 will be copied to x ;
 ```
@@ -68,11 +68,13 @@ this is how we write
 `<<` used along with `cout` 
 
 # Cout example : 
- 
+ ```cpp
  int main (){
 
+    std::cout << "sus"
 
  }
+ ```
 
 # Intake from user
 `std::cin>>`
@@ -93,7 +95,7 @@ std::cout<< z ;
 return 0;
 }
 ```
-```
+```cpp
 #include <iostream>
 
 int main(){
@@ -109,7 +111,7 @@ return 0;
 ```
 # String basic concept
 anything written inside `""` is string 
-```
+```cpp
 #include <iostream>
 
 int main(){
@@ -122,19 +124,19 @@ return 0;
 
 # Container Type
 Now lets talk about conatainers type 
-```
+```cpp
 int : integer container
 hold value like  1, 2, 6748, -22
 ```
-```
+```cpp
 float : float container 
 holds value like 1.5, 44.5, -33.8
 ```
-```
+```cpp
 char : character container
 holds value like w, r, i, s
 ```
-```
+```cpp
 boolean : True/False container
 holds two value T or F
 ```
